@@ -1,0 +1,11 @@
+welcome-to-s1y-lab-3
+value-of-evidence-example
+pcr-testing-covid-19
+pinfectionpositive-test
+exploration-of-sensitivityspecificity
+pno-infectionnegative-test
+exploration-of-sensitivityspecificity-1
+group-exercise
+sample-size-needed-to-obtain-certain-probabilities-for-observing-rare-events
+differently-coloured-eyes
+a-criminal-with-differently-coloured-eyes

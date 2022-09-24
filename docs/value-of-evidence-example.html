@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Value of Evidence Example | S1Y Lab 3</title>
+  <meta name="description" content="2 Value of Evidence Example | S1Y Lab 3" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Value of Evidence Example | S1Y Lab 3" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Value of Evidence Example | S1Y Lab 3" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="pcr-testing-covid-19.html"/>
+<script src="libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="include/webex.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Welcome to S1Y Lab 3<span></span></a></li>
+<li class="chapter" data-level="2" data-path="value-of-evidence-example.html"><a href="value-of-evidence-example.html"><i class="fa fa-check"></i><b>2</b> Value of Evidence Example<span></span></a></li>
+<li class="chapter" data-level="3" data-path="pcr-testing-covid-19.html"><a href="pcr-testing-covid-19.html"><i class="fa fa-check"></i><b>3</b> PCR testing (COVID-19)<span></span></a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="pcr-testing-covid-19.html"><a href="pcr-testing-covid-19.html#pinfectionpositive-test"><i class="fa fa-check"></i><b>3.1</b> P(Infection|Positive Test)<span></span></a></li>
+<li class="chapter" data-level="3.2" data-path="pcr-testing-covid-19.html"><a href="pcr-testing-covid-19.html#exploration-of-sensitivityspecificity"><i class="fa fa-check"></i><b>3.2</b> Exploration of sensitivity/specificity<span></span></a></li>
+<li class="chapter" data-level="3.3" data-path="pcr-testing-covid-19.html"><a href="pcr-testing-covid-19.html#pno-infectionnegative-test"><i class="fa fa-check"></i><b>3.3</b> P(No Infection|Negative test)<span></span></a></li>
+<li class="chapter" data-level="3.4" data-path="pcr-testing-covid-19.html"><a href="pcr-testing-covid-19.html#exploration-of-sensitivityspecificity-1"><i class="fa fa-check"></i><b>3.4</b> Exploration of sensitivity/specificity<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="group-exercise.html"><a href="group-exercise.html"><i class="fa fa-check"></i><b>4</b> Group Exercise<span></span></a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="group-exercise.html"><a href="group-exercise.html#sample-size-needed-to-obtain-certain-probabilities-for-observing-rare-events"><i class="fa fa-check"></i><b>4.1</b> Sample size needed to obtain certain probabilities for observing rare events<span></span></a></li>
+<li class="chapter" data-level="4.2" data-path="group-exercise.html"><a href="group-exercise.html#differently-coloured-eyes"><i class="fa fa-check"></i><b>4.2</b> Differently coloured eyes<span></span></a></li>
+<li class="chapter" data-level="4.3" data-path="group-exercise.html"><a href="group-exercise.html#a-criminal-with-differently-coloured-eyes"><i class="fa fa-check"></i><b>4.3</b> A criminal with differently coloured eyes<span></span></a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">S1Y Lab 3</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="value-of-evidence-example" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> Value of Evidence Example<a href="value-of-evidence-example.html#value-of-evidence-example" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="images/bloodgroup.png" width="30%" /></p>
+<p>Reconsider the following example from Case Study lecture 2:
+A domestic burglary had been committed in New Zealand. It was thought that the perpetrator had cut themselves on a piece of glass, which was found at the crime scene. The blood was of type O (in the ABO system).</p>
+<p>We shall assume there is no explanation for the presence of the blood on the glass other than it got there when broken by the offender (that is, we assume a link between blood and offender).</p>
+<p>We consider the following hypotheses:</p>
+<ul>
+<li><span class="math inline">\(H_{p}\)</span>: The suspect is the source of the blood.</li>
+<li><span class="math inline">\(H_{d}\)</span>: Someone other than the suspect is the source of the blood.</li>
+</ul>
+<p>Here are the frequencies of blood groups on the ABO system in New Zealand at the time of the burglary:</p>
+<p><img src="images/blood_groups.png" width="30%" /></p>
+<p><br></p>
+<p><strong>What is the value of evidence (V) in this example? (To 3 decimal places).</strong></p>
+<div class="webex-solution">
+<button>
+Hint 1
+</button>
+<p>E is the evidence of blood of type O found on the piece of glass.
+Remember that <span class="math inline">\(V=\frac{P(E|H_{p})}{P(E|H_{d})}\)</span>.</p>
+</div>
+<div class="webex-solution">
+<button>
+Hint 2
+</button>
+<p>In this example, <span class="math inline">\(P(E|H_{p})\)</span> is the probability of finding blood of type O on the piece of glass if the suspect was the source of the blood.</p>
+<p>Similarly, <span class="math inline">\(P(E|H_{d})\)</span> is the probability of finding blood of type O on the piece of glass if someone other than the suspect was the source.</p>
+</div>
+<p><input class='webex-solveme nospaces' size='5' data-answer='["1.464"]'/></p>
+<div class="webex-solution">
+<button>
+Solution
+</button>
+<p><span class="math inline">\(P(E|Hp)=1\)</span>, as we know the suspect has blood group O. <span class="math inline">\(P(E|Hd)=0.683\)</span>, as the prevalence of blood group O is 68.3%. Hence, <span class="math inline">\(V=\frac{P(E|Hp)}{P(E|Hd)}=\frac{1}{0.683}=1.464\)</span>.</p>
+</div>
+<p><br></p>
+<p>Remember the following relation:
+<span class="math display">\[\begin{align*}
+  \text{Odds}(H_{p}|E)=V \times \text{Odds}(H_{p})
+\end{align*}\]</span></p>
+<p>Assume that, before considering the blood group as piece of evidence, the prior probability of the suspect being the source of the blood is <span class="math inline">\(P(H_{p})=0.2\)</span>.</p>
+<p><br></p>
+<p><strong>What are the prior odds in favour of Hp? (To 2 decimal places).</strong></p>
+<div class="webex-solution">
+<button>
+Hint 1
+</button>
+<p>The prior odds in favour of <span class="math inline">\(H_{p}\)</span> can be computed as $(H_{p})=.</p>
+</div>
+<div class="webex-solution">
+<button>
+Hint 2
+</button>
+<p>Here, <span class="math inline">\(H_{p}\)</span> and <span class="math inline">\(H_{d}\)</span> are complementary hypotheses. Hence, <span class="math inline">\(P(H_{d})=1-P(H_{p})\)</span>.</p>
+</div>
+<p><input class='webex-solveme nospaces' size='4' data-answer='["0.25",".25"]'/></p>
+<div class="webex-solution">
+<button>
+Solution
+</button>
+<p><span class="math inline">\(Odds(Hp)=\frac{P(Hp)}{(1-P(Hp))}= \frac{0.2}{0.8} = 0.25\)</span>.</p>
+</div>
+<p><br></p>
+<p><strong>What are the posterior odds in favour of Hp, for the value of evidence and prior odds you have just computed? (To 3 decimal places).</strong></p>
+<div class="webex-solution">
+<button>
+Hint
+</button>
+<p>The posterior odds can be computed as <span class="math inline">\(Odds(Hp|E)= V \times Odds(Hp)\)</span>.</p>
+</div>
+<p><input class='webex-solveme nospaces' size='5' data-answer='["0.366",".366"]'/></p>
+<div class="webex-solution">
+<button>
+Solution
+</button>
+<p><span class="math inline">\(Odds(Hp|E)= V \times Odds(Hp) = 1.464 \times 0.25=0.366\)</span></p>
+</div>
+<p><br></p>
+<p>Remember the following relation:
+<span class="math display">\[\begin{align*}
+  P(H_{p}|E)=\frac{\text{Odds}(H_{p}|E)}{\text{Odds}(H_{p}|E)+1}
+\end{align*}\]</span>
+Now, plot the posterior probability of <span class="math inline">\(H_{p}\)</span>, given the evidence, against the prior probability for each <span class="math inline">\(P(H_{p})\)</span> in {0.01,0.02,0.03,...,0.99}. You can create an object which contains a sequence of values using the <code>seq()</code> function, e.g. <code>seq(from=0.01,to=0.99,by=0.01)</code>. You can create a "quick" plot using <code>plot(x=...,y=...,type=...)</code>, where <code>x</code> and <code>y</code> are two vectors of the same length and <code>type</code> can take values like <code>"p"</code> for points and <code>"l"</code> for line (note that the letters must appear in quotes).</p>
+<p>If you want to create the plot using ggplot, you will have to add the two vectors to a dataframe first. Once you have created the objects <code>prior_prob</code> and <code>posterior_prob</code>, this can be done using the following code:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="value-of-evidence-example.html#cb2-1" aria-hidden="true" tabindex="-1"></a>probs <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">cbind</span>(prior_prob,posterior_prob))</span>
+<span id="cb2-2"><a href="value-of-evidence-example.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>probs,<span class="fu">aes</span>(prior_prob,posterior_prob)) <span class="sc">+</span> <span class="fu">geom_line</span>()</span></code></pre></div>
+<div class="webex-solution">
+<button>
+Hint 1
+</button>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="value-of-evidence-example.html#cb3-1" aria-hidden="true" tabindex="-1"></a>prior_prob <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from=</span><span class="fl">0.01</span>,<span class="at">to=</span><span class="fl">0.99</span>,<span class="at">by=</span><span class="fl">0.01</span>)</span>
+<span id="cb3-2"><a href="value-of-evidence-example.html#cb3-2" aria-hidden="true" tabindex="-1"></a>prior_odds <span class="ot">&lt;-</span> prior_prob<span class="sc">/</span>(<span class="dv">1</span><span class="sc">-</span>prior_prob)</span></code></pre></div>
+</div>
+<div class="webex-solution">
+<button>
+Hint 2
+</button>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="value-of-evidence-example.html#cb4-1" aria-hidden="true" tabindex="-1"></a>prior_prob <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from=</span><span class="fl">0.01</span>,<span class="at">to=</span><span class="fl">0.99</span>,<span class="at">by=</span><span class="fl">0.01</span>)</span>
+<span id="cb4-2"><a href="value-of-evidence-example.html#cb4-2" aria-hidden="true" tabindex="-1"></a>prior_odds <span class="ot">&lt;-</span> prior_prob<span class="sc">/</span>(<span class="dv">1</span><span class="sc">-</span>prior_prob)</span>
+<span id="cb4-3"><a href="value-of-evidence-example.html#cb4-3" aria-hidden="true" tabindex="-1"></a>V <span class="ot">&lt;-</span> <span class="fl">1.464</span></span>
+<span id="cb4-4"><a href="value-of-evidence-example.html#cb4-4" aria-hidden="true" tabindex="-1"></a>posterior_odds <span class="ot">&lt;-</span> V<span class="sc">*</span>prior_odds</span>
+<span id="cb4-5"><a href="value-of-evidence-example.html#cb4-5" aria-hidden="true" tabindex="-1"></a>posterior_prob <span class="ot">&lt;-</span> posterior_odds<span class="sc">/</span>(posterior_odds<span class="sc">+</span><span class="dv">1</span>)</span></code></pre></div>
+</div>
+<div class="webex-solution">
+<button>
+Solution
+</button>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="value-of-evidence-example.html#cb5-1" aria-hidden="true" tabindex="-1"></a>prior_prob <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from=</span><span class="fl">0.01</span>,<span class="at">to=</span><span class="fl">0.99</span>,<span class="at">by=</span><span class="fl">0.01</span>)</span>
+<span id="cb5-2"><a href="value-of-evidence-example.html#cb5-2" aria-hidden="true" tabindex="-1"></a>prior_odds <span class="ot">&lt;-</span> prior_prob<span class="sc">/</span>(<span class="dv">1</span><span class="sc">-</span>prior_prob)</span>
+<span id="cb5-3"><a href="value-of-evidence-example.html#cb5-3" aria-hidden="true" tabindex="-1"></a>V <span class="ot">&lt;-</span> <span class="fl">1.464</span></span>
+<span id="cb5-4"><a href="value-of-evidence-example.html#cb5-4" aria-hidden="true" tabindex="-1"></a>posterior_odds <span class="ot">&lt;-</span> V<span class="sc">*</span>prior_odds</span>
+<span id="cb5-5"><a href="value-of-evidence-example.html#cb5-5" aria-hidden="true" tabindex="-1"></a>posterior_prob <span class="ot">&lt;-</span> posterior_odds<span class="sc">/</span>(posterior_odds<span class="sc">+</span><span class="dv">1</span>)</span>
+<span id="cb5-6"><a href="value-of-evidence-example.html#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="at">x=</span>prior_prob,<span class="at">y=</span>posterior_prob,<span class="at">type=</span><span class="st">&#39;l&#39;</span>)</span></code></pre></div>
+</div>
+<p><br></p>
+<p>Since we want to compare the posterior probability with the prior probability (both being between 0 and 1), it would be better for them to be on the same scale. Here is an option for how to get them to be on the same scale and adding a reference line to display the case where the prior and posterior probabilities are the same, in ggplot:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="value-of-evidence-example.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb6-2"><a href="value-of-evidence-example.html#cb6-2" aria-hidden="true" tabindex="-1"></a>prior_prob <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from=</span><span class="fl">0.01</span>,<span class="at">to=</span><span class="fl">0.99</span>,<span class="at">by=</span><span class="fl">0.01</span>)</span>
+<span id="cb6-3"><a href="value-of-evidence-example.html#cb6-3" aria-hidden="true" tabindex="-1"></a>prior_odds <span class="ot">&lt;-</span> prior_prob<span class="sc">/</span>(<span class="dv">1</span><span class="sc">-</span>prior_prob)</span>
+<span id="cb6-4"><a href="value-of-evidence-example.html#cb6-4" aria-hidden="true" tabindex="-1"></a>V <span class="ot">&lt;-</span> <span class="fl">1.464</span></span>
+<span id="cb6-5"><a href="value-of-evidence-example.html#cb6-5" aria-hidden="true" tabindex="-1"></a>posterior_odds <span class="ot">&lt;-</span> V<span class="sc">*</span>prior_odds</span>
+<span id="cb6-6"><a href="value-of-evidence-example.html#cb6-6" aria-hidden="true" tabindex="-1"></a>posterior_prob <span class="ot">&lt;-</span> posterior_odds<span class="sc">/</span>(posterior_odds<span class="sc">+</span><span class="dv">1</span>)</span>
+<span id="cb6-7"><a href="value-of-evidence-example.html#cb6-7" aria-hidden="true" tabindex="-1"></a>prior_post_data <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">cbind</span>(prior_prob,posterior_prob))</span>
+<span id="cb6-8"><a href="value-of-evidence-example.html#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="value-of-evidence-example.html#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(prior_post_data, <span class="fu">aes</span>(<span class="at">x =</span> prior_prob, <span class="at">y =</span> posterior_prob)) <span class="sc">+</span> </span>
+<span id="cb6-10"><a href="value-of-evidence-example.html#cb6-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">geom_line</span>() <span class="sc">+</span>      </span>
+<span id="cb6-11"><a href="value-of-evidence-example.html#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="co">#defining scale_x_continuous and scale_y_continuous in          the same way causes the scales for prior and posterior          probabilities to be the same </span></span>
+<span id="cb6-12"><a href="value-of-evidence-example.html#cb6-12" aria-hidden="true" tabindex="-1"></a>        <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>)) <span class="sc">+</span> </span>
+<span id="cb6-13"><a href="value-of-evidence-example.html#cb6-13" aria-hidden="true" tabindex="-1"></a>        <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>)) <span class="sc">+</span> </span>
+<span id="cb6-14"><a href="value-of-evidence-example.html#cb6-14" aria-hidden="true" tabindex="-1"></a>        <span class="fu">geom_abline</span>(<span class="at">intercept=</span><span class="dv">0</span>,<span class="at">slope=</span><span class="dv">1</span>,<span class="at">col=</span><span class="st">&quot;red&quot;</span>,<span class="at">linetype=</span><span class="st">&quot;dashed&quot;</span>) <span class="sc">+</span></span>
+<span id="cb6-15"><a href="value-of-evidence-example.html#cb6-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;Prior Probability&quot;</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">&quot;Posterior Probability&quot;</span>)</span></code></pre></div>
+<p><img src="main_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><br></p>
+<p><strong>What is the posterior probability of Hp, given the evidence, corresponding to a prior probability of <span class="math inline">\(P(H_p) = 0.6\)</span>? (As a percentage, to 2 decimal places)</strong></p>
+<div class="webex-solution">
+<button>
+Hint 1
+</button>
+<p>First, compute <span class="math inline">\(\text{Odds}(H_{p}|E)=V \times \text{Odds}(H_{p})\)</span>.</p>
+</div>
+<div class="webex-solution">
+<button>
+Hint 2
+</button>
+<p>Then, you can compute <span class="math inline">\(P(H_{p}|E)=\frac{\text{Odds}(H_{p}|E)}{\left(\text{Odds}(H_{p}|E)+1\right)}\)</span>.</p>
+</div>
+<p><input class='webex-solveme nospaces' size='5' data-answer='["68.71"]'/></p>
+<div class="webex-solution">
+<button>
+Solution
+</button>
+<p><span class="math inline">\(Odds(Hp|E)=V \times Odds(Hp)=1.464 \times \frac{0.6}{0.4}=2.196\)</span>
+<br>
+<span class="math inline">\(P(Hp|E)=\frac{Odds(Hp|E)}{(Odds(Hp|E)+1)}=\frac{2.196}{3.196}= 0.6871\)</span></p>
+</div>
+<p><br></p>
+
+</div>
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  if (t = document.getElementById("webex-total_correct")) {
+    var correct = document.getElementsByClassName("webex-correct").length;
+    var solvemes = document.getElementsByClassName("webex-solveme").length;
+    var radiogroups = document.getElementsByClassName("webex-radiogroup").length;
+    var selects = document.getElementsByClassName("webex-select").length;
+    
+    t.innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+  
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+  
+  var cl = this.classList
+  
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+  
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+  
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+  
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+  
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+  }
+  
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+  
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+  }
+
+  update_total_correct();
+}
+
+</script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pcr-testing-covid-19.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["main.pdf", "main.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"info": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
