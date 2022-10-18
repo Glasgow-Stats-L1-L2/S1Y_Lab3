@@ -44,9 +44,9 @@ sens_spec_base <- sample(c(
 
 `r hide("Hint")`
 
-Let Inf denote infection, T+ denote a positive test. Then, use Bayes' theorem to compute the conditional probability:  
+Let C denote a COVID-19 infection, T+ denote a positive test. Then, use Bayes' theorem to compute the conditional probability:  
 
-$P(Inf|T+)=\frac{P(T+|Inf) \times P(Inf)}{P(T+|Inf) \times P(Inf)+P(T+|no Inf) \times P(no Inf)}$
+$P(C|T+)=\frac{P(T+|C) \times P(C)}{P(T+|C) \times P(C)+P(T+|C^c) \times P(C^c)}$
 
 `r unhide()`
 
@@ -54,9 +54,9 @@ $P(Inf|T+)=\frac{P(T+|Inf) \times P(Inf)}{P(T+|Inf) \times P(Inf)+P(T+|no Inf) \
 
 `r hide("Solution")`
 
-Let Inf denote infection, T+ denote a positive test. Then, use Bayes' theorem to compute the conditional probability:  
+Let C denote a COVID-19 infection, T+ denote a positive test. Then, use Bayes' theorem to compute the conditional probability:  
 
-$P(Inf|T+)=\frac{P(T+|Inf) \times P(Inf)}{P(T+|Inf) \times P(Inf)+P(T+|no Inf) \times P(no Inf)}=\frac{0.98 \times 0.01}{0.98 \times 0.01 + 0.001 \times 0.99}\approx 0.91$
+$P(C|T+)=\frac{P(T+|C) \times P(C)}{P(T+|C) \times P(C)+P(T+|C^c) \times P(C^c)}=\frac{0.98 \times 0.01}{0.98 \times 0.01 + 0.001 \times 0.99}\approx 0.91$
 
 `r unhide()`
 
@@ -142,13 +142,19 @@ Compute $\frac{sens*brate}{sens*brate + (1-spec)*(1-brate)}$.
 
 `r hide("Solution")`
 
-Compute $\frac{sens*brate}{sens*brate + (1-spec)*(1-brate)}$ for $sens=1,spec=0.999,brate=0.01$.
+```{r comp_prob_solution, eval = TRUE}
+sens <- 1
+spec <- 0.999
+brate <- 0.01
+sens*brate/(sens*brate+(1-spec)*(1-brate)) #as decimal
+round(100*(sens*brate/(sens*brate+(1-spec)*(1-brate))),2) #as percentage, rounded to 2 decimal places
+```
 
 `r unhide()`
 
 Motivating question: Given a positive test result, why is the probability of a COVID-19 infection not 100%, if we have a sensitivity of 100%? That, we will explore next.  
 
-Let's see how the specificity might effect that probability of infection given a positive test.
+Let's see how the specificity might affect the probability of infection given a positive test.
 
 That is, vary the specificity, keeping the sensitivity now fixed at 0.98 and the base rate at 0.01. 
 
@@ -253,17 +259,19 @@ Here is again the summary of the PCR test:
 **Let us again assume a prevalence of COVID-19 of 1% in the public. If the PCR test gives a negative result for a randomly selected patient, what is the conditional probability that they do not have a COVID-19 infection? (As a percentage, to two decimal places).**
 
 `r hide("Hint")`
-Let Inf denote infection, T- denote a negative test. Then, use Bayes' theorem to compute the conditional probability: 
-$P(No Inf|T-)=\frac{P(T-|No Inf) \times P(No Inf)}{P(T-|No Inf) \times P(No Inf) + P(T-|Inf) \times P(Inf)}$
+Let C denote a COVID-19 infection, T- denote a negative test. Then, use Bayes' theorem to compute the conditional probability: 
+$P(C^c|T-)=\frac{P(T-|C^c) \times P(C^c)}{P(T-|C^c) \times P(C^c) + P(T-|C) \times P(C)}$
 `r unhide()`
 
 `r fitb(99.98)`
 
 `r hide("Solution")`
 
-Let Inf denote infection, T- denote a negative test. Then, use Bayes' theorem to compute the conditional probability: 
+Let C denote a COVID-19 infection, T- denote a negative test. Then, use Bayes' theorem to compute the conditional probability: 
 <br>
-$P(No Inf|T-)=\frac{P(T-|No Inf) \times P(No Inf)}{P(T-|No Inf) \times P(No Inf) + P(T-|Inf) \times P(Inf)}= \frac{0.999 \times 0.99}{0.999 \times 0.99 + 0.02 \times 0.01}=0.9998$
+$P(C^c|T-)=\frac{P(T-|C^c) \times P(C^c)}{P(T-|C^c) \times P(C^c) + P(T-|C) \times P(C)}= \frac{0.999 \times 0.99}{0.999 \times 0.99 + 0.02 \times 0.01}=0.9998$
+
+As a percentage, this is 99.98%.
 
 `r unhide()`
 
@@ -351,7 +359,7 @@ ggplot(data=df, aes(x = sens, y = prob)) +
 
 <br>
 
-Let's see how the specificity might effect that probability of no infection given a negative test.
+Let's see how the specificity might affect the probability of no infection given a negative test.
 
 <br>
 

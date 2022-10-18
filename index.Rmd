@@ -50,17 +50,18 @@ In this tutorial, you will:
 * investigate the effects of sensitivity, specificity and base rate on test results.
 
 
-Before you start your work in RStudio, make sure you have the following packages installed and loaded: 
+Before you start your work in RStudio, make sure you have the following packages loaded: 
 
 
 ```{r load-packages, eval = FALSE}
-#you only need to install them once
-install.packages("dplyr")
-install.packages("ggplot2")
-
 #load them at the start of each session
 library(dplyr)
 library(ggplot2)
 ```
+
+<!-- #you only need to install them once -->
+<!-- install.packages("dplyr") -->
+<!-- install.packages("ggplot2") -->
+
  
 <br> 

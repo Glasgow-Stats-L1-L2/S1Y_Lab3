@@ -33,7 +33,7 @@ Having two different eye colours is known as heterochromia iridis. It is approxi
 
 <br>
 
-**1. If you were to randomly sample 500 people, what would be the probability of seeing at least one person with two different coloured eyes? (As a percentage, to two decimal places)**
+**1. If you were to randomly sample 500 people, what would be the probability of seeing at least one person with two different coloured eyes?**
 
 `r fitb(95.07)`%
 
@@ -96,7 +96,7 @@ Hence, the following hypotheses are considered:
 
 <br>
 
-**7. What is the value of evidence in support of Hp, the evidence being eyes of different colours? (To 2 decimal places)**
+**7. What is the value of evidence in support of Hp, the evidence being eyes of different colours?**
 
 `r fitb(166.67)`
 
@@ -120,6 +120,6 @@ We should be safe to assume that the evidence of height ($E_{1}$) and that of di
 
 <br>
 
-**9. What is the value of evidence in support of Hd, given the evidence that the driver is between 172m and 178m tall and that she has eyes of different colours? (As a whole number)**
+**9. What is the value of evidence in support of Hp, given the evidence that the driver is between 172m and 178m tall and that she has eyes of different colours? (As a whole number)**
 
 `r fitb(2778)`

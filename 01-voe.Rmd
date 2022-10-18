@@ -63,7 +63,7 @@ Assume that, before considering the blood group as piece of evidence, the prior 
 
 `r hide("Hint 1")`
 
-The prior odds in favour of $H_{p}$ can be computed as $\text{Odds}(H_{p})=\frac{P(H_{p})}{P(H_{d})}.
+The prior odds in favour of $H_{p}$ can be computed as $\text{Odds}(H_{p})=\frac{P(H_{p})}{P(H_{d})}$.
 
 `r unhide()`
 
@@ -154,8 +154,10 @@ plot(x=prior_prob,y=posterior_prob,type='l')
 
 Since we want to compare the posterior probability with the prior probability (both being between 0 and 1), it would be better for them to be on the same scale. Here is an option for how to get them to be on the same scale and adding a reference line to display the case where the prior and posterior probabilities are the same, in ggplot:
 
+
+<!-- library(ggplot2) -->
+
 ```{r warning=FALSE}
-library(ggplot2)
 prior_prob <- seq(from=0.01,to=0.99,by=0.01)
 prior_odds <- prior_prob/(1-prior_prob)
 V <- 1.464
